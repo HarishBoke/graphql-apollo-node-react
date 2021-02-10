@@ -11,11 +11,11 @@ console.log('baseURL', config)
 console.log('port', process.env.BASE_URL)
 const httpLink = new HttpLink({
   // uri: `http://${baseURL}:${port}/graphql`,
-  uri: `https://affectionate-bartik-a46c9e/graphql`,
+  uri: `https://affectionate-bartik-a46c9e.netlify.app/graphql`,
 });
 
 const wsLink = new WebSocketLink({
-  uri: `ws://affectionate-bartik-a46c9e/graphql`,
+  uri: `ws://affectionate-bartik-a46c9e.netlify.app/graphql`,
   options: {
     reconnect: true,
   },
