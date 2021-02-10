@@ -1,6 +1,4 @@
 const { gql, ApolloServer, PubSub } = require('apollo-server');
-const dotenv = require('dotenv');
-dotenv.config();
 
 const typeDefs = gql`
     type Book {
