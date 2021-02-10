@@ -41,5 +41,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://affectionate-bartik-a46c9e.netlify.app/"
+  "proxy": "http://localhost:4000"
 }
