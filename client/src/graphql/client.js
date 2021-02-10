@@ -4,13 +4,18 @@ import { ApolloLink, split } from 'apollo-link';
 import { HttpLink } from 'apollo-link-http';
 import { WebSocketLink } from 'apollo-link-ws';
 import { InMemoryCache } from 'apollo-cache-inmemory';
+import config from './../config';
 
+
+console.log('baseURL', config)
+console.log('port', process.env.BASE_URL)
 const httpLink = new HttpLink({
-  uri: 'http://localhost:4000/graphql',
+  // uri: `http://${baseURL}:${port}/graphql`,
+  uri: `https://affectionate-bartik-a46c9e/graphql`,
 });
 
 const wsLink = new WebSocketLink({
-  uri: `ws://localhost:4000/graphql`,
+  uri: `ws://affectionate-bartik-a46c9e/graphql`,
   options: {
     reconnect: true,
   },
